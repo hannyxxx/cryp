@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-contenedor{
+  display: flex;
+  flex-direction: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10px;
+  
+}
+.navbar-contenedor .App-logo{
+  height: 70px;
+width: auto;
+}
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+ul li a{
+  font-size: 25px;
+  text-decoration: none;
+}
+ .btn button{
+font-size: 20px;
+padding: 10px 20px;
+border: none;
+border-radius: 40px;
+}
