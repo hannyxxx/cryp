@@ -1,6 +1,10 @@
-import logo from './logo.svg';
+import logo from '../src/components/multimedia/icon.png';
 import './App.css';
 import NavBar from './components/NavBar';
+import ClassComponents from './ClassComponents/ClassComponent';
+import FunctionalComponents from './functionalcomponents/FunctionalComponents';
+import ItemLisConteiner from './components/ItemLisConteiner';
+
 
 
 function App() {
@@ -9,17 +13,11 @@ function App() {
       <NavBar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ClassComponents />
+        <FunctionalComponents />
+        <div>
+        <ItemLisConteiner greeting='Hola'/>
+          </div>
       </header>
     </div>
   );
