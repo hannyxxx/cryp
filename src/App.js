@@ -3,8 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ClassComponents from './ClassComponents/ClassComponent';
 import FunctionalComponents from './functionalcomponents/FunctionalComponents';
-import ItemLisConteiner from './components/ItemLisConteiner';
-
+import ItemLisConteiner from './components/ItemLisConteiner/ItemLisConteiner';
+import ItemCount from './components/ItemCount/ItemCount';
 
 
 function App() {
@@ -15,8 +15,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <ClassComponents />
         <FunctionalComponents />
+        <ItemCount />
+    <ItemLisConteiner />
         <div>
-        <ItemLisConteiner greeting='Hola'/>
+        {/* <ItemLisConteiner greeting='Hola'/> */}
           </div>
       </header>
     </div>
