@@ -5,6 +5,8 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin: 20px;
+  padding: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,7 +47,7 @@
   align-items: center;
   height: 85px;
   padding: 5px 10px;
-  
+  background-color: rgb(45, 95, 45);
 }
 .navbar-contenedor .App-logo{
   height: 70px;
@@ -62,10 +64,12 @@ ul li{
 ul li a{
   font-size: 25px;
   text-decoration: none;
+  color: orangered;
 }
  .btn button{
 font-size: 20px;
 padding: 10px 20px;
 border: none;
 border-radius: 40px;
+color: orangered;
 }
