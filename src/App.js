@@ -15,7 +15,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <ClassComponents />
         <FunctionalComponents />
-        <ItemCount />
+        <ItemCount inicial={0}/>
     <ItemLisConteiner />
         <div>
         {/* <ItemLisConteiner greeting='Hola'/> */}
