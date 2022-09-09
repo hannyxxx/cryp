@@ -11,4 +11,3 @@ const Item = ({title, price, image}) => {
 
 export default Item;
 
-<button></button>

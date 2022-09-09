@@ -5,6 +5,7 @@ import ClassComponents from './ClassComponents/ClassComponent';
 import FunctionalComponents from './functionalcomponents/FunctionalComponents';
 import ItemLisConteiner from './components/ItemLisConteiner/ItemLisConteiner';
 import ItemCount from './components/ItemCount/ItemCount';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'; 
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <FunctionalComponents />
         <ItemCount inicial={0}/>
     <ItemLisConteiner />
+     <ItemDetailContainer/>  
         <div>
         {/* <ItemLisConteiner greeting='Hola'/> */}
           </div>
