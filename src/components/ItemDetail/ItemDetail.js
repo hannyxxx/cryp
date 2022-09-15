@@ -1,4 +1,5 @@
  import './ItemDetail.css';
+
 export const ItemDetail = ({data}) => {
 return(
 
