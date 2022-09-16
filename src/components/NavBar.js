@@ -1,10 +1,10 @@
-import logo from '../components/multimedia/icon.png';
+import logo from '../multimedia/icon.png';
 import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     return(
         <div className="navbar-contenedor">
 <img src={logo} className="App-logo" alt="logo" />
-<ul ClassName="nav-menu">
+{<ul ClassName="nav-menu">
 <li>
     <NavLink 
     to={'/'}
@@ -33,7 +33,7 @@ const NavBar = () => {
     <NavLink to={'/Contacto'}className='btn'><button>Contacto</button></NavLink>
     </li>
 </ul>
-
+}
 
         </div>
 
