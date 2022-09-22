@@ -3,6 +3,8 @@ import  '../ItemCount/ItemCount';
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
+import { useContext } from 'react';
+import { CartContext } from '../Context/CartProvider';
 
 
 

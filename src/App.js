@@ -7,6 +7,8 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetail from './components/ItemDetail/ItemDetail';
 
+import CartProvider from './components/Context/CartProvider';
+
 
 
 function App() {
@@ -16,8 +18,9 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" />
         <ItemCount inicial={0}/> */}
-  
-     <BrowserRouter>
+  <CartProvider >
+
+  <BrowserRouter>
      <NavBar/>
     
      <Routes>
@@ -29,6 +32,9 @@ function App() {
       <Route path="/Contacto" element={<div>Contacto</div>} />
      </Routes>
      </BrowserRouter>
+
+  </CartProvider>
+     
 
      <img src={logo} className="App-logo" alt="logo" />
         <ItemCount inicial={0}/>
