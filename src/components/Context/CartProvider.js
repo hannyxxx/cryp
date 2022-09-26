@@ -25,13 +25,20 @@ const vaciarCart = () => {
     setCart([]);
 }
 
-const eliminarItem = (title) => {
-    const nArr = cart.filter((item)=>item.filter!==title);
-    setCart(nArr);
-}
+const eliminarItem = (productId) => {
+let nuevoArreglo = [];
+cart.forEach((product) => {
+    if (product.id === productId) {
+        console.log(product);
+    } else{
+        nuevoArreglo.push(product);
+    }
+});
+setCart(nuevoArreglo);
+};
 
   return (
-    <CartContext.Provider value={{cart, addToCart}}>
+    <CartContext.Provider value={{cart, addToCart, eliminarItem}}>
 
 {children}
 

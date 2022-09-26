@@ -1,6 +1,7 @@
 import data from "../MockData";
 import { useEffect, useState } from "react";
 import  ItemList  from "../ItemList/ItemList";
+import { Link } from "react-router-dom";
 
 
 const ItemLisConteiner = () => {
@@ -21,6 +22,7 @@ const ItemLisConteiner = () => {
 
     return (
     <>
+    <Link style={{color:'whithe'}} to="/cart">Carrito</Link>
     <ItemList lista={productList}/>
     </>
     );
