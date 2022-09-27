@@ -7,9 +7,11 @@ import { useContext } from 'react';
 import { CartContext } from '../Context/CartProvider';
 
 
+const rutaInicial = '../img/'
 
 export const ItemDetail = ({data}) => {
   const[goToCard, setGoToCard] = useState(false);
+  
 
     const onAdd = (quantify) => {
         setGoToCard(true);
@@ -18,7 +20,7 @@ export const ItemDetail = ({data}) => {
 return(
 
 <div className="detail">
-<img  width={'200px'} src={data.image} alt="" />
+<img  width={'200px'} src={rutaInicial+data.image} alt="" />
 
 
 <div className="conteni">

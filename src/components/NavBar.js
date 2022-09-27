@@ -15,7 +15,7 @@ const NavBar = () => {
 
 
     <NavLink 
-    to={'/Diseños'}
+    to={'/category/Diseños'}
     style={{ textDecoration:'none'}}>
         Diseños
         </NavLink>
@@ -23,14 +23,14 @@ const NavBar = () => {
 
 
     <NavLink 
-    to={'/Quienes Somos?'}
+    to={'/category/Quienes Somos?'}
     style={{ textDecoration:'none'}}>
     Quienes Somos?
     </NavLink>
     
 
 
-    <NavLink to={'/Contacto'}className='btn'><button>Contacto</button></NavLink>
+    <NavLink to={'/category/Contacto'}className='btn'><button>Contacto</button></NavLink>
     </li>
 </ul>
 }
