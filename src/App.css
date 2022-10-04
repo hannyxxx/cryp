@@ -47,7 +47,7 @@
   align-items: center;
   height: 85px;
   padding: 5px 10px;
-  background-color: rgb(45, 95, 45);
+  background-color: rgb(51, 24, 42);
 }
 .navbar-contenedor .App-logo{
   height: 70px;
@@ -63,8 +63,8 @@ ul li{
 }
 ul li a{
   font-size: 25px;
-  padding: 19px;
-  margin:66px;
+  padding: 5px;
+  margin:120px;
   text-decoration: none;
   color: orangered;
 }

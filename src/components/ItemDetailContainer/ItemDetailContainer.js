@@ -16,24 +16,25 @@ const nft = {
 
 
 export const ItemDetailContainer = () => {
-    const { id } = useParams();
-    const [data, getProduct, setProduct, setData] = useState ([]);
+    const { detailId } = useParams();
+    const [data,  setData] = useState ([]);
     
     const db = getFirestore();
-    const queryDoc = doc(db, 'product', id);
+
+    const getProduct = () => {
+    const queryDoc = doc(db, 'items', detailId);
     getDoc(queryDoc)
     .then(res => {
-        setProduct(res.data());
+        setData({id:res.id, ...res.data()});
     })
-    .catch(err => console.log(err));
-
-    console.log(data);
+    .catch((err) => console.log(err));
+};
     /* const { detailId } = useParams();
  */
 
     useEffect(() => {
         getProduct();
-    }, [id]);
+    }, [detailId]);
     
   /*   useEffect(() => {
         const getData = new Promise(resolve => {
@@ -49,7 +50,7 @@ export const ItemDetailContainer = () => {
 
     return (
     <>
-    <ItemDetail data={data}/>
+   { data ? <ItemDetail data={data}/> : 'Cargando...'}
     </>
     );
     

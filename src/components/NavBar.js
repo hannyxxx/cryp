@@ -14,12 +14,7 @@ const NavBar = () => {
     
 
 
-    <NavLink 
-    to={'/category/Diseños'}
-    style={{ textDecoration:'none'}}>
-        Diseños
-        </NavLink>
-    
+   
 
 
     <NavLink 

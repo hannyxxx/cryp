@@ -2,7 +2,7 @@ import data from "../MockData";
 import { useEffect, useState } from "react";
 import  ItemList  from "../ItemList/ItemList";
 import { Link, useParams } from "react-router-dom";
-import {getFirestore, getDocs, collection, query} from 'firebase/firestore';
+import {getFirestore, getDocs, collection, query, where} from 'firebase/firestore';
 
 
 const ItemLisConteiner = () => {
@@ -12,7 +12,7 @@ const ItemLisConteiner = () => {
     
 const getProducts = () => {
 const db = getFirestore();
-const querySnapshot = collection(db, 'product');
+const querySnapshot = collection(db, 'items');
 
 /* const queryFilter = query(querySnapshot, 
   where("categoryId", "===", categoryName)
@@ -20,7 +20,7 @@ const querySnapshot = collection(db, 'product');
   if (categoryName) {
     const queryFilter = query(
       querySnapshot, 
-      ("categoryId", "===", categoryName)
+      where("categoryId", "===", categoryName)
       );
     getDocs(queryFilter).then((response) => {
       const data = response.docs.map((product) => {
@@ -47,6 +47,9 @@ const querySnapshot = collection(db, 'product');
 
 };
 
+useEffect(()  => {
+getProducts()
+},[]);
  /*    useEffect(() => {
         getProducts.then((response) => {
         setProductList(response);

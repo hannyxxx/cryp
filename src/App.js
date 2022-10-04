@@ -29,7 +29,6 @@ function App() {
      <Route path="category/:catgoriaId" element={<ItemLisConteiner/>} />
       <Route path="/detail/:detailId" element={<ItemDetailContainer/>} />
       <Route path="/card" element={<ItemDetail/>} />
-      <Route path="/Diseños" element={<div>Diseños</div>} />
       <Route path="/Quienes Somos?" element={<div>Quienes Somos?</div>} />
       <Route path="/Contacto" element={<div>Contacto</div>} />
       <Route path="/cart" element={<Cart/>} />
