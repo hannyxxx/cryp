@@ -3,22 +3,24 @@ import  '../ItemCount/ItemCount';
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
-import { useContext } from 'react';
-import { CartContext } from '../Context/CartProvider';
+
+
+
 
 
 const rutaInicial = '../img/'
 
 export const ItemDetail = ({data}) => {
   const[goToCard, setGoToCard] = useState(false);
-  
+ 
+ 
 
     const onAdd = (quantify) => {
         setGoToCard(true);
     }
 
 return(
-
+    
 <div className="detail">
 <img  width={'200px'} src={rutaInicial+data.image} alt="" />
 

@@ -1,3 +1,4 @@
+
 import { createContext, useEffect, useState } from "react"
 
 export const CartContext = createContext();
@@ -21,9 +22,7 @@ useEffect(() => {
 console.log(cart);
 }, [cart]);
 
-const vaciarCart = () => {
-    setCart([]);
-}
+
 
 const eliminarItem = (productId) => {
 let nuevoArreglo = [];

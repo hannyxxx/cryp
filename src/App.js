@@ -9,6 +9,7 @@ import ItemDetail from './components/ItemDetail/ItemDetail';
 
 import CartProvider from './components/Context/CartProvider';
 import Cart from './components/Cart/Cart';
+import QuienesSomos from './components/QuienesSomos/QuienesSomos';
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/Quienes Somos?" element={<div>Quienes Somos?</div>} />
       <Route path="/Contacto" element={<div>Contacto</div>} />
       <Route path="/cart" element={<Cart/>} />
+      <Route path="/Quienes Somos?" element={<QuienesSomos/>} />
      </Routes>
      </BrowserRouter>
 
